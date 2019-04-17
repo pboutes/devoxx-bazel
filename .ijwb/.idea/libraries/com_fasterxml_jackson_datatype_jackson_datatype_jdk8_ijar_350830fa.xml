@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com_fasterxml_jackson_datatype_jackson_datatype_jdk8-ijar_350830fa">
+    <CLASSES>
+      <root url="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/genfiles/external/com_fasterxml_jackson_datatype_jackson_datatype_jdk8/jar/_ijar/jar/external/com_fasterxml_jackson_datatype_jackson_datatype_jdk8/jar/com_fasterxml_jackson_datatype_jackson_datatype_jdk8-ijar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

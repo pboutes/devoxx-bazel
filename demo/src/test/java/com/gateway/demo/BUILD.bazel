@@ -1,0 +1,23 @@
+java_test(
+    name = "DemoApplicationTest",
+    srcs = ["DemoApplicationTests.java"],
+    deps = [
+        "//demo/src/main/java/com/gateway/demo:lib",
+        "//domain/src/main/java/domain",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_test",
+    ],
+    test_class = "com.gateway.demo.DemoApplicationTests",
+)
+
+java_test(
+    name = "UtilTest",
+    srcs = ["UtilTests.java"],
+    deps = [
+        "//demo/src/main/java/com/gateway/demo:lib",
+        "//domain/src/main/java/domain",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_test",
+    ],
+    test_class = "com.gateway.demo.UtilTests"
+)

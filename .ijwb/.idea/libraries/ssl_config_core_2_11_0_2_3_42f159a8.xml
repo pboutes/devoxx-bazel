@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ssl-config-core_2.11-0.2.3_42f159a8">
+    <CLASSES>
+      <root url="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/external/fetcher_app/v1/https/repo.maven.apache.org/maven2/com/typesafe/ssl-config-core_2.11/0.2.3/ssl-config-core_2.11-0.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

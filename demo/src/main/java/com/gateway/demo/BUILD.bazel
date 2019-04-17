@@ -1,0 +1,82 @@
+load("@io_bazel_rules_docker//java:image.bzl", "java_image", DEFAULT_JAVA_BASE = "DEFAULT_JAVA_BASE")
+load(
+    "@io_bazel_rules_docker//container:container.bzl",
+    "container_image",
+)
+
+
+config_setting(
+    name = "dev",
+    values = {
+        "define": "env=dev"
+    }
+)
+
+config_setting(
+    name = "docker",
+    values = {
+        "define": "env=docker"
+    }
+)
+
+#JAVA_BINARY_ENV = [
+#    "dev",
+#    "docker"
+#]
+
+
+java_library(
+    name = "lib",
+    srcs = glob(["*.java"]),
+    deps = [
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//domain/src/main/java/domain",
+    ],
+    resources = ["//demo/src/main/resources"],
+    visibility = ["//demo/src/test:__subpackages__"]
+)
+
+#[java_binary(
+#    name = "app_%s" % env,
+#    main_class = "com.gateway.demo.DemoApplication",
+#    runtime_deps = [":lib"],
+#    jvm_flags = ["-Dspring.profiles.active=%s" % env]
+#) for env in JAVA_BINARY_ENV]
+
+java_binary(
+    name = "app",
+    main_class = "com.gateway.demo.DemoApplication",
+    runtime_deps = [":lib"],
+    jvm_flags = select({
+        ":dev": ["-Dspring.profiles.active=dev"],
+        ":docker": ["-Dspring.profiles.active=docker"],
+        "//conditions:default": ["-Dspring.profiles.active=dev"],
+    })
+)
+
+
+###### Docker part ########
+
+DOCKER_FLAG = [
+    "-it",
+    "--rm",
+    "-p",
+    "8000:8000"
+]
+
+container_image(
+    name = "app_image_base",
+    base = "@java_base//image",
+    ports = ["8000"],
+    legacy_run_behavior = False,
+    docker_run_flags = " ".join(DOCKER_FLAG)
+)
+
+java_image(
+    name = "app_image",
+    base = ":app_image_base",
+    runtime_deps = [":lib"],
+    main_class = "com.gateway.demo.DemoApplication",
+    jvm_flags = ["-Dspring.profiles.active=docker"],
+    visibility = ["//visibility:public"],
+)

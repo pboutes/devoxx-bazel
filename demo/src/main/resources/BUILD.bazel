@@ -1,0 +1,5 @@
+filegroup(
+    name = "resources",
+    srcs = ["application.yml"],
+    visibility = ["//visibility:public"]
+)

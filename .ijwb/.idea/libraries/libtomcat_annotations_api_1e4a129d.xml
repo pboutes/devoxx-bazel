@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libtomcat_annotations_api_1e4a129d">
+    <CLASSES>
+      <root url="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/bin/3rdparty/jvm/org/apache/tomcat/libtomcat_annotations_api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

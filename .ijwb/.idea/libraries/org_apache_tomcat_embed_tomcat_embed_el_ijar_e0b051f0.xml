@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org_apache_tomcat_embed_tomcat_embed_el-ijar_e0b051f0">
+    <CLASSES>
+      <root url="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/genfiles/external/org_apache_tomcat_embed_tomcat_embed_el/jar/_ijar/jar/external/org_apache_tomcat_embed_tomcat_embed_el/jar/org_apache_tomcat_embed_tomcat_embed_el-ijar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

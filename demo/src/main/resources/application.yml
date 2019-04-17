@@ -1,0 +1,18 @@
+server:
+    port: 8000
+
+---
+
+spring:
+  profiles: dev
+
+fetcher:
+  url: "http://localhost:3000"
+
+---
+
+spring:
+  profiles: docker
+
+fetcher:
+  url: "http://docker.for.mac.localhost:3000"

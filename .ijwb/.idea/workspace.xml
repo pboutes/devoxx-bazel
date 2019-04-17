@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AttachedSourceJarManager">
+    <library>org_springframework_spring_web-ijar_8339dca4</library>
+    <library>com_fasterxml_jackson_core_jackson_databind-ijar_6904f710</library>
+  </component>
+  <component name="BlazeImportSettings">
+    <option name="buildSystem" value="Bazel" />
+    <option name="locationHash" value="devoxxbazelsample-6cd6468b" />
+    <option name="projectDataDirectory" value="$PROJECT_DIR$" />
+    <option name="projectName" value="devoxx-bazel-sample" />
+    <option name="projectViewFile" value="$PROJECT_DIR$/.bazelproject" />
+    <option name="workspaceRoot" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2af6c2f-b24e-4516-beba-d8aab5d5a23d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/DemoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="643">
+              <caret line="35" column="123" selection-start-line="35" selection-start-column="123" selection-end-line="35" selection-end-column="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+      <find>do</find>
+      <find>app_class</find>
+      <find>BAD</find>
+      <find>keep</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../demo/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/DemoApplication.java" />
+        <option value="$PROJECT_DIR$/../demo/src/main/resources/docker.application.yml" />
+        <option value="$PROJECT_DIR$/../demo/src/main/resources/docker-application.yml" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/Mode.tmpl" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/Toto.java" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/clean.sh" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/generate.bash" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/BUILD.tmpl" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/model-1/ModelGen1.java" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/model-1/ModelGen0.java" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/model-1/BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/model-10/ModelGen451.java" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../3rdparty/jvm/org/springframework/boot/BUILD" />
+        <option value="$PROJECT_DIR$/../cache-server/nginx.conf" />
+        <option value="$PROJECT_DIR$/../dependencies.yml" />
+        <option value="$PROJECT_DIR$/../fetcher/src/main/scala/fetcher/Fetcher.scala" />
+        <option value="$PROJECT_DIR$/../fetcher/src/main/scala/fetcher/WebServer.scala" />
+        <option value="$PROJECT_DIR$/../cache-server/init.sh" />
+        <option value="$PROJECT_DIR$/../demo/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/../demo/src/main/resources/BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../WORKSPACE" />
+        <option value="$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/springboot.bzl" />
+        <option value="$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/springboot_pkg.sh" />
+        <option value="$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../domain/src/main/java/domain/Model1.java" />
+        <option value="$PROJECT_DIR$/../.bazelrc" />
+        <option value="$PROJECT_DIR$/../demo/src/test/java/com/gateway/demo/DemoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/Util.java" />
+        <option value="$PROJECT_DIR$/../demo/src/test/java/com/gateway/demo/UtilTests.java" />
+        <option value="$PROJECT_DIR$/../demo/src/test/java/com/gateway/demo/BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../cache-server/BUILD.bazel" />
+        <option value="$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/DemoController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="cache-server" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="demo" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="demo" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="demo" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="demo" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="java" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="demo" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="java" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="demo" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="domain" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="domain" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="domain" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="fetcher" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="fetcher" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="fetcher" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="fetcher" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="scala" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="devoxx-bazel-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devoxx-bazel-sample" type="34d14456:WorkspaceRootNode" />
+              <item name="fetcher" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="src" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="main" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="scala" type="81dbbfc7:BlazePsiDirectoryNode" />
+              <item name="fetcher" type="81dbbfc7:BlazePsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Bazel Command.Bazel test DemoApplicationTests">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="fetcher.Application" />
+      <module name=".workspace" />
+      <option name="VM_PARAMETERS" value="-cp /private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/bin/fetcher/src/main/scala/fetcher/fetcher_deploy.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Bazel run demo:app_image_base.binary" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run">
+        <blaze-target>//demo/src/main/java/com/gateway/demo:app_image_base.binary</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test DemoApplicationTests" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" context-element="PsiClass:DemoApplicationTests" blaze-command="test">
+        <blaze-target kind="java_test">//demo/src/test/java/com/gateway/demo:DemoApplicationTest</blaze-target>
+        <blaze-user-flag>--test_filter=com.gateway.demo.DemoApplicationTests#</blaze-user-flag>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test DemoApplicationTests.shouldReturn400" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" context-element="PsiMethod:shouldReturn400" blaze-command="test">
+        <blaze-target kind="java_test">//demo/src/test/java/com/gateway/demo:DemoApplicationTest</blaze-target>
+        <blaze-user-flag>--test_sharding_strategy=disabled</blaze-user-flag>
+        <blaze-user-flag>--test_filter=com.gateway.demo.DemoApplicationTests#shouldReturn400$</blaze-user-flag>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test DemoApplicationTests.superTest" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" context-element="PsiMethod:superTest" blaze-command="test">
+        <blaze-target kind="java_test">//demo/src/test/java/com/gateway/demo:DemoApplicationTest</blaze-target>
+        <blaze-user-flag>--test_sharding_strategy=disabled</blaze-user-flag>
+        <blaze-user-flag>--test_filter=com.gateway.demo.DemoApplicationTests#superTest$</blaze-user-flag>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bazel Command.Bazel test DemoApplicationTests" />
+        <item itemvalue="Bazel Command.Bazel test DemoApplicationTests.shouldReturn400" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Bazel Command.Bazel test DemoApplicationTests.superTest" />
+        <item itemvalue="Bazel Command.Bazel run demo:app_image_base.binary" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../cloud/scala-services" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2af6c2f-b24e-4516-beba-d8aab5d5a23d" name="Default Changelist" comment="" />
+      <created>1554770720588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554770720588</updated>
+      <workItem from="1554770721815" duration="7373000" />
+      <workItem from="1554814978255" duration="1085000" />
+      <workItem from="1554873830528" duration="1245000" />
+      <workItem from="1554936076600" duration="13452000" />
+      <workItem from="1555029583112" duration="9813000" />
+      <workItem from="1555115231957" duration="33222000" />
+      <workItem from="1555457771741" duration="946000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 04m 48s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 04m 49s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 04m 56s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 05m 30s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 05m 34s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 05m 36s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 05m 45s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_superTest - 2019.04.09 at 04h 05m 46s.xml">
+      <configuration name="Bazel test DemoApplicationTests.superTest" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests_shouldReturn400 - 2019.04.14 at 02h 51m 45s.xml">
+      <configuration name="Bazel test DemoApplicationTests.shouldReturn400" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bazel_test_DemoApplicationTests - 2019.04.14 at 02h 53m 01s.xml">
+      <configuration name="Bazel test DemoApplicationTests" configurationId="BlazeCommandRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67136000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="970" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992057" weight="0.32893717" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Blaze Problems" order="7" sideWeight="0.49921876" weight="0.32893717" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Blaze Console" order="11" sideWeight="0.50078124" side_tool="true" weight="0.32801822" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Cargo" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960938" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4992057" weight="0.32893717" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Blaze Problems" order="7" sideWeight="0.49921876" weight="0.32893717" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Blaze Console" order="11" sideWeight="0.50078124" side_tool="true" weight="0.32893717" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Cargo" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/external/gateway_app/v1/https/jcenter.bintray.com/org/springframework/spring-test/5.1.5.RELEASE/spring-test-5.1.5.RELEASE.jar!/org/springframework/test/web/client/ResponseActions.class" />
+    <entry file="file://$PROJECT_DIR$/../3rdparty/jvm/org/springframework/BUILD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3rdparty/workspace.bzl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fetcher/src/main/scala/fetcher/Application.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/Toto.java" />
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/ModelGen187.java" />
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/clean.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/generate.bash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/model-2/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/BUILD.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/model-1/ModelGen1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/model-1/ModelGen0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/model-1/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/model-10/ModelGen451.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/Model.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3rdparty/jvm/com/fasterxml/jackson/module/BUILD">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3rdparty/jvm/com/fasterxml/BUILD">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3rdparty/jvm/com/fasterxml/jackson/datatype/BUILD">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3rdparty/jvm/com/fasterxml/jackson/core/BUILD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dependencies.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cache-server/init.sh" />
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/resources/docker-application.yml" />
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/springboot_pkg.sh" />
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/springboot.bzl" />
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/Model1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.bazelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/external/org_springframework_spring_test/jar/org_springframework_spring_test-sources.jar!/org/springframework/test/web/servlet/result/StatusResultMatchers.java" />
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/external/org_springframework_spring_web/jar/org_springframework_spring_web-sources.jar!/org/springframework/http/HttpStatus.java" />
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/genfiles/external/org_springframework_spring_web/jar/_ijar/jar/external/org_springframework_spring_web/jar/org_springframework_spring_web-ijar.jar!/org/springframework/http/HttpStatus.class" />
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/external/com_fasterxml_jackson_core_jackson_databind/jar/com_fasterxml_jackson_core_jackson_databind-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java" />
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/genfiles/external/com_fasterxml_jackson_core_jackson_databind/jar/_ijar/jar/external/com_fasterxml_jackson_core_jackson_databind/jar/com_fasterxml_jackson_core_jackson_databind-ijar.jar!/com/fasterxml/jackson/databind/ObjectMapper.class" />
+    <entry file="file://$PROJECT_DIR$/../demo/src/test/java/com/gateway/demo/DemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/external/com_fasterxml_jackson_core_jackson_core/jar/com_fasterxml_jackson_core_jackson_core-sources.jar!/com/fasterxml/jackson/core/JsonProcessingException.java" />
+    <entry file="file://$PROJECT_DIR$/../demo/src/test/java/com/gateway/demo/UtilTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/test/java/com/gateway/demo/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3rdparty/jvm/org/springframework/boot/BUILD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domain/src/main/java/domain/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fetcher/src/main/scala/fetcher/WebServer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fetcher/src/main/scala/fetcher/Fetcher.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/resources/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../fetcher/src/main/scala/fetcher/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WORKSPACE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="97" column="26" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cache-server/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../cache-server/BUILD.bazel">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../demo/src/main/java/com/gateway/demo/DemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="35" column="123" selection-start-line="35" selection-start-column="123" selection-end-line="35" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>ElasticCloud</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>.workspace</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20467836" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.20467836" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>akka-actor_2.11-2.5.12_4bbaaef5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

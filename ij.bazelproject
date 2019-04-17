@@ -1,0 +1,10 @@
+directories:
+  .
+
+targets:
+  //demo/...:all
+  //fetcher/...:all
+  //3rdparty/...:all
+
+additional_languages:
+  scala

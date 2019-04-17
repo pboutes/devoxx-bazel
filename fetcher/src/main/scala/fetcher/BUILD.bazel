@@ -1,0 +1,27 @@
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_binary")
+
+filegroup(
+    name = "src",
+    srcs = glob(["*.scala"])
+)
+
+scala_library(
+    name = "fetcher",
+    srcs = [":src"],
+    deps = [
+        "@fetcher_app//:com_typesafe_akka_akka_stream_2_11",
+        "@fetcher_app//:com_typesafe_akka_akka_http_spray_json_2_11",
+        "@fetcher_app//:io_spray_spray_json_2_11",
+        "@fetcher_app//:com_typesafe_akka_akka_http_2_11",
+        "@fetcher_app//:com_typesafe_akka_akka_http_core_2_11",
+        "@fetcher_app//:com_typesafe_akka_akka_actor_2_11",
+    ],
+    visibility = ["//visibility:public"]
+)
+
+scala_binary(
+    name = "app",
+    main_class = "fetcher.Application",
+    runtime_deps = [":fetcher"],
+    visibility = ["//visibility:public"]
+)

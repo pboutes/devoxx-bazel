@@ -1,0 +1,15 @@
+
+#filegroup(
+#    name = "model",
+#    srcs = [
+#        "//domain/src/main/java/domain/model-%s" % n for n in range(1, 13, 1)
+#    ]
+#)
+
+java_library(
+    name = "domain",
+    srcs = glob(["*.java"]),
+    deps = ["//domain/src/main/java/domain/model-%s" % n for n in range(1, 13, 1)],
+    exports = ["//domain/src/main/java/domain/model-%s" % n for n in range(1, 13, 1)],
+    visibility = ["//visibility:public"],
+)

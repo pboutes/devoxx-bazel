@@ -1,0 +1,32 @@
+load("@io_bazel_rules_docker//container:container.bzl", "container_image", "container_layer")
+load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
+
+pkg_tar(
+    name = "cache",
+    package_dir = "/cache",
+    visibility = ["//visibility:private"],
+)
+
+DOCKER_FLAG = [
+    "-v",
+    "/tmp/toto:/cache",
+    "-p",
+    "8888:80"
+]
+
+container_layer(
+    name = "conf",
+    files = ["nginx.conf"],
+    directory = "/etc/nginx",
+    visibility = ["//visibility:private"],
+)
+
+container_image(
+    name = "cache-server",
+    base = "@nginx_base//image",
+    layers = [":conf"],
+    tars = [":cache"],
+    ports = ["8888/tcp"],
+    legacy_run_behavior = False,
+    docker_run_flags = " ".join(DOCKER_FLAG),
+)
