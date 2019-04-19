@@ -1,5 +1,0 @@
-java_library(
-    name = "model-1",
-    srcs = glob(["*.java"]),
-    visibility = ["//visibility:public"],
-)

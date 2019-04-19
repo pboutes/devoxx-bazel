@@ -8,7 +8,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import domain.Model1;
+import domain.Info;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -63,7 +63,7 @@ public class DemoApplicationTests {
 
 		mvc.perform(MockMvcRequestBuilders.get("/greet?name=Devoxx").accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo(mapper.writeValueAsString(new Model1("Hello Devoxx!", url)))));
+				.andExpect(content().string(equalTo(mapper.writeValueAsString(Info.of("Hello Devoxx!", url)))));
 	}
 
 	@Test

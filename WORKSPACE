@@ -65,60 +65,6 @@ http_archive(
 )
 
 
-###########################################################
-################### DOCKER RULE ###########################
-###########################################################
-
-DOCKER_COMMIT = "49cc180b7566947ed414c232762b5b549fbbaf72"
-
-# Download the rules_docker repository at release v0.7.0
-http_archive(
-    name = "io_bazel_rules_docker",
-    strip_prefix = "rules_docker-%s" % (DOCKER_COMMIT),
-    sha256 = "4438139f4a4ad3ffaf094e6aa03a6e80519b24da5ce79d5316b036041bf731c1",
-    urls = ["https://github.com/bazelbuild/rules_docker/archive/%s.zip" % (DOCKER_COMMIT)],
-)
-
-# This is NOT needed when going through the language lang_image
-# "repositories" function(s).
-load(
-    "@io_bazel_rules_docker//repositories:repositories.bzl",
-    container_repositories = "repositories",
-)
-container_repositories()
-
-load(
-    "@io_bazel_rules_docker//container:container.bzl",
-    "container_pull",
-)
-
-container_pull(
-  name = "java_base",
-  registry = "gcr.io",
-  repository = "distroless/java",
-  tag = "debug",
-  # 'tag' is also supported, but digest is encouraged for reproducibility.
-)
-
-container_pull(
-    name = "nginx_base",
-    registry = "index.docker.io",
-    repository = "library/nginx",
-    digest = "sha256:f5aab36815a33016d4375ce6468a2f1453dbaf47a53f8c7df69a9f6865045ef4",
-)
-
-load(
-    "@io_bazel_rules_docker//java:image.bzl",
-    _java_image_repos = "repositories",
-)
-
-_java_image_repos()
-
-###########################################################
-################### END DOCKER RULE #######################
-###########################################################
-
-
 
 ###########################################################
 ##################### SCALA RULE ##########################
@@ -196,3 +142,57 @@ maven_install(
         "https://repo.maven.apache.org/maven2"
     ]
 )
+
+
+###########################################################
+################### DOCKER RULE ###########################
+###########################################################
+
+DOCKER_COMMIT = "49cc180b7566947ed414c232762b5b549fbbaf72"
+
+# Download the rules_docker repository at release v0.7.0
+http_archive(
+    name = "io_bazel_rules_docker",
+    strip_prefix = "rules_docker-%s" % (DOCKER_COMMIT),
+    sha256 = "4438139f4a4ad3ffaf094e6aa03a6e80519b24da5ce79d5316b036041bf731c1",
+    urls = ["https://github.com/bazelbuild/rules_docker/archive/%s.zip" % (DOCKER_COMMIT)],
+)
+
+# This is NOT needed when going through the language lang_image
+# "repositories" function(s).
+load(
+    "@io_bazel_rules_docker//repositories:repositories.bzl",
+    container_repositories = "repositories",
+)
+container_repositories()
+
+load(
+    "@io_bazel_rules_docker//container:container.bzl",
+    "container_pull",
+)
+
+container_pull(
+  name = "java_base",
+  registry = "gcr.io",
+  repository = "distroless/java",
+  tag = "debug",
+  # 'tag' is also supported, but digest is encouraged for reproducibility.
+)
+
+container_pull(
+    name = "nginx_base",
+    registry = "index.docker.io",
+    repository = "library/nginx",
+    digest = "sha256:f5aab36815a33016d4375ce6468a2f1453dbaf47a53f8c7df69a9f6865045ef4",
+)
+
+load(
+    "@io_bazel_rules_docker//java:image.bzl",
+    _java_image_repos = "repositories",
+)
+
+_java_image_repos()
+
+###########################################################
+################### END DOCKER RULE #######################
+###########################################################

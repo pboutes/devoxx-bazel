@@ -19,12 +19,6 @@ config_setting(
     }
 )
 
-#JAVA_BINARY_ENV = [
-#    "dev",
-#    "docker"
-#]
-
-
 java_library(
     name = "lib",
     srcs = glob(["*.java"]),
@@ -35,6 +29,11 @@ java_library(
     resources = ["//demo/src/main/resources"],
     visibility = ["//demo/src/test:__subpackages__"]
 )
+
+#JAVA_BINARY_ENV = [
+#    "dev",
+#    "docker"
+#]
 
 #[java_binary(
 #    name = "app_%s" % env,
