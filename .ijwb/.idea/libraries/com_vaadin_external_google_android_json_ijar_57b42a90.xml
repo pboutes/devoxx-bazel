@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="com_vaadin_external_google_android_json-ijar_57b42a90">
-    <CLASSES>
-      <root url="jar:///private/var/tmp/_bazel_paul/5e277f55086300feb31d4d4d053b7c12/execroot/devoxx_bazel_sample/bazel-out/darwin-fastbuild/genfiles/external/com_vaadin_external_google_android_json/jar/_ijar/jar/external/com_vaadin_external_google_android_json/jar/com_vaadin_external_google_android_json-ijar.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

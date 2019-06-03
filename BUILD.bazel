@@ -1,4 +1,27 @@
 load("@io_bazel_rules_scala//scala:scala_toolchain.bzl", "scala_toolchain")
+
+alias(
+  name = "gateway",
+  actual = "//demo/src/main/java/com/gateway/demo:app"  
+)
+
+alias(
+  name = "gateway_image",
+  actual = "//demo/src/main/java/com/gateway/demo:app_image"  
+)
+
+alias(
+    name = "fetcher",
+    actual = "//fetcher/src/main/scala/fetcher:app"
+)
+
+alias(
+  name = "cache-server",
+  actual = "//cache-server"
+)
+
+
+
 scala_toolchain(
     name = "my_toolchain_impl",
     scalacopts = ["-deprecation"],

@@ -4,7 +4,7 @@ load(
     "container_image",
 )
 
-
+# define config
 config_setting(
     name = "dev",
     values = {
@@ -12,13 +12,7 @@ config_setting(
     }
 )
 
-config_setting(
-    name = "docker",
-    values = {
-        "define": "env=docker"
-    }
-)
-
+# define the library build
 java_library(
     name = "lib",
     srcs = glob(["*.java"]),
@@ -30,18 +24,7 @@ java_library(
     visibility = ["//demo/src/test:__subpackages__"]
 )
 
-#JAVA_BINARY_ENV = [
-#    "dev",
-#    "docker"
-#]
-
-#[java_binary(
-#    name = "app_%s" % env,
-#    main_class = "com.gateway.demo.DemoApplication",
-#    runtime_deps = [":lib"],
-#    jvm_flags = ["-Dspring.profiles.active=%s" % env]
-#) for env in JAVA_BINARY_ENV]
-
+# define the binary build
 java_binary(
     name = "app",
     main_class = "com.gateway.demo.DemoApplication",
@@ -50,11 +33,20 @@ java_binary(
         ":dev": ["-Dspring.profiles.active=dev"],
         ":docker": ["-Dspring.profiles.active=docker"],
         "//conditions:default": ["-Dspring.profiles.active=dev"],
-    })
+    }),
+    visibility = ["//visibility:public"]
 )
 
 
+
 ###### Docker part ########
+
+config_setting(
+    name = "docker",
+    values = {
+        "define": "env=docker"
+    }
+)
 
 DOCKER_FLAG = [
     "-it",
@@ -68,7 +60,8 @@ container_image(
     base = "@java_base//image",
     ports = ["8000"],
     legacy_run_behavior = False,
-    docker_run_flags = " ".join(DOCKER_FLAG)
+    docker_run_flags = " ".join(DOCKER_FLAG),
+    visibility = ["//visibility:private"],
 )
 
 java_image(
@@ -79,3 +72,16 @@ java_image(
     jvm_flags = ["-Dspring.profiles.active=docker"],
     visibility = ["//visibility:public"],
 )
+
+
+#JAVA_BINARY_ENV = [
+#    "dev",
+#    "docker"
+#]
+
+#[java_binary(
+#    name = "app_%s" % env,
+#    main_class = "com.gateway.demo.DemoApplication",
+#    runtime_deps = [":lib"],
+#    jvm_flags = ["-Dspring.profiles.active=%s" % env]
+#) for env in JAVA_BINARY_ENV]

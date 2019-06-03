@@ -9,7 +9,7 @@ pkg_tar(
 
 DOCKER_FLAG = [
     "-v",
-    "/tmp/toto:/cache",
+    "/tmp/bazel_remote_cache:/cache",
     "-p",
     "8888:80"
 ]
@@ -29,4 +29,5 @@ container_image(
     ports = ["8888/tcp"],
     legacy_run_behavior = False,
     docker_run_flags = " ".join(DOCKER_FLAG),
+    visibility = ["//visibility:public"],
 )

@@ -1,3 +1,12 @@
+test_suite(
+    name = "test-all",
+    tests = [
+        ":DemoApplicationTest",
+        ":UtilTest",
+    ],
+    visibility = ["//visibility:public"]
+)
+
 java_test(
     name = "DemoApplicationTest",
     srcs = ["DemoApplicationTests.java"],

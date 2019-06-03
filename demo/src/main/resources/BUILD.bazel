@@ -1,5 +1,5 @@
 filegroup(
     name = "resources",
     srcs = ["application.yml"],
-    visibility = ["//visibility:public"]
+    visibility = ["//demo/src/main/java:__subpackages__"]
 )

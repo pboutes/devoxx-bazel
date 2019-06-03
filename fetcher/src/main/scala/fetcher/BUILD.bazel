@@ -2,7 +2,8 @@ load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_binary")
 
 filegroup(
     name = "src",
-    srcs = glob(["*.scala"])
+    srcs = glob(["*.scala"]),
+    visibility = ["//visibility:private"]
 )
 
 scala_library(
@@ -16,7 +17,7 @@ scala_library(
         "@fetcher_app//:com_typesafe_akka_akka_http_core_2_11",
         "@fetcher_app//:com_typesafe_akka_akka_actor_2_11",
     ],
-    visibility = ["//visibility:public"]
+    visibility = ["//visibility:private"]
 )
 
 scala_binary(

@@ -1,6 +1,6 @@
 workspace(name = "devoxx_bazel_sample")
 
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_jar")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 BAZEL_SKYLIB_TAG = "0.6.0"
 
@@ -11,21 +11,9 @@ http_archive(
           BAZEL_SKYLIB_TAG,
 )
 
-# Current workaround for https://github.com/bazelbuild/rules_scala/issues/726
-#http_archive(
-#    name = "com_google_protobuf",
-#    sha256 = "9510dd2afc29e7245e9e884336f848c8a6600a14ae726adb6befdb4f786f0be2",
-#    urls = ["https://github.com/protocolbuffers/protobuf/archive/v3.6.1.3.zip"],
-#    strip_prefix = "protobuf-3.6.1.3",
-#)
-
-#maven_jar(
-#    name = "com_google_protobuf",
-#    artifact = "com.google.protobuf:protobuf-java:3.6.1",
-#)
-
 PROTOBUF_JAVA_VERSION = "3.6.1"
 
+# Current workaround for https://github.com/bazelbuild/rules_scala/issues/726
 http_archive(
     name = "com_google_protobuf",
     url = "http://central.maven.org/maven2/com/google/protobuf/protobuf-java/%s/protobuf-java-%s.jar" % (PROTOBUF_JAVA_VERSION, PROTOBUF_JAVA_VERSION),
@@ -80,11 +68,6 @@ http_archive(
              )
 
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
-# scala_repositories(("2.12.8", {
-#     "scala_compiler": "f34e9119f45abd41e85b9e121ba19dd9288b3b4af7f7047e86dc70236708d170",
-#     "scala_library": "321fb55685635c931eba4bc0d7668349da3f2c09aee2de93a70566066ff25c28",
-#     "scala_reflect": "4d6405395c4599ce04cea08ba082339e3e42135de9aae2923c9f5367e957315a"
-# }))
 
 scala_repositories()
 
@@ -109,27 +92,6 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 load("//3rdparty:workspace.bzl", "maven_dependencies")
 
 maven_dependencies()
-
-#maven_install(
-#    name = "gateway_app",
-#    artifacts = [
-#        "org.springframework.boot:spring-boot-starter-web:2.1.3.RELEASE",
-#        "org.springframework.boot:spring-boot-starter-test:2.1.3.RELEASE"
-#         "org.hamcrest:hamcrest-library:1.3",
-#         "org.springframework.boot:spring-boot-autoconfigure:2.1.3.RELEASE",
-#         "org.springframework.boot:spring-boot-test-autoconfigure:2.1.3.RELEASE",
-#         "org.springframework.boot:spring-boot-test:2.1.3.RELEASE",
-#         "org.springframework.boot:spring-boot:2.1.3.RELEASE",
-#         "org.springframework.boot:spring-boot-starter-web:2.1.3.RELEASE",
-#         "org.springframework:spring-beans:5.1.5.RELEASE",
-#         "org.springframework:spring-context:5.1.5.RELEASE",
-#         "org.springframework:spring-test:5.1.5.RELEASE",
-#         "org.springframework:spring-web:5.1.5.RELEASE",
-#    ],
-#    repositories = [
-#        "https://jcenter.bintray.com"
-#    ]
-#)
 
 maven_install(
     name = "fetcher_app",

@@ -6,5 +6,9 @@ targets:
   //fetcher/...:all
   //3rdparty/...:all
 
+test_sources:
+  demo/src/test/*
+  domain/src/test/*
+
 additional_languages:
   scala
