@@ -9,6 +9,10 @@ This "dummy" app is composed of multiple parts:
 - **domain**: a java domain model in the `domain` package
 - **cache-server**: a cache-server package use to build our remote cache server image
 
+For managing external dependencies, I have both used (to show different tools):
+- [bazel-deps](https://github.com/johnynek/bazel-deps)
+- [rules_jvm_external](https://github.com/bazelbuild/rules_jvm_external)
+
 ## Getting started
 
 1. Install bazel by following the instructions from http://bazel.build
