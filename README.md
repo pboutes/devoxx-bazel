@@ -4,7 +4,7 @@ Sample app use for the Devoxx France 2019 conference "À la découverte de Bazel
 
 This "dummy" app is composed of multiple parts:
 
-- **gateway**: a spring boot java app in the `demo` package
+- **gateway**: a spring boot java app in the `demo` package
 - **fetcher**: a scala app in the `fetcher` package
 - **domain**: a java domain model in the `domain` package
 - **cache-server**: a cache-server package use to build our remote cache server image
@@ -53,7 +53,7 @@ should return
 
 ## Add the remote cache
 
-To perform our remote caching, we'll use an nginx server with the WebDAV module. We will run a container, and mount the container cache directory to an host volume. The container will expose the port number `8888.`
+To perform our remote caching, we'll use an nginx server with the WebDAV module. We will run a container, and mount the container cache directory to an host volume. The container will expose the port number `8888.`
 
 Our nginx server will start with the following configuration:
 ```
@@ -81,7 +81,7 @@ http {
 
 We could pass option directly with bazel CLI, or use a `.bazelrc` configuration file (this is what we are going to do).
 
-Look at the `.bazelrc` file at the root repository, we've had this one:
+Look at the `.bazelrc` file at the root repository, we've had this one:
 ```
 build --remote_http_cache=http://0.0.0.0:8888/cache
 ```
